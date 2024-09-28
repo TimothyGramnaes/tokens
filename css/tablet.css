@@ -1,0 +1,21 @@
+@media (max-width: 52em) {
+
+    .nav-item {
+        font-size: 0.82rem;
+        padding: 1rem .4rem 1rem .4rem;
+    }
+
+    .mid-nav {
+        flex-direction: column;
+    }
+
+    .paintings {
+        height: auto;
+        width: 80vw;
+        
+    
+        border: solid 2px white;
+        margin: 1rem 0 0 0;
+    }
+
+}

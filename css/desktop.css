@@ -1,0 +1,445 @@
+/*#region Reusable classes */
+.flex { display: flex; }
+.horizontal { flex-direction: row; }
+.vertical { flex-direction: column; }
+.center { align-items: center; justify-content: center; }
+.start { justify-content: flex-start; }
+.end { justify-content: flex-end; }
+.space-evenly { justify-content: space-evenly; }
+.space-between { justify-content: space-between; }
+.space-around { justify-content: space-around; }
+.fixed { position: fixed; }
+.absolute { position: absolute; }
+.relative { position: relative; }
+.top { top: 0; }
+.bottom { bottom: 0; }
+.left { left: 0; }
+.right { right: 0; }
+.white { color: white; }
+.black { color: black; }
+.bg-transparent { background-color: transparent; }
+.bg-white { background-color: white; }
+.bg-black { background-color: black; }
+.hiddenDesktop { display: none; }
+.helvetica { font-family: Arial, Helvetica, sans-serif; }
+
+/*#endregion Reusable Classes */
+html { height: 100%; }
+
+@font-face {
+    font-family: type-writer;
+    src: url(../fonts/SpecialElite.ttf)
+}
+
+
+a:hover {
+
+    transition: all 200ms;
+    color: grey;
+    font-size: 1.11rem;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    font-family: type-writer;
+}
+
+
+/*#region Header */
+header {
+
+    color: white;
+
+    height: 3rem;
+    width: 100%;
+    padding-top: .5rem;
+    justify-content: baseline;
+}
+
+.nav-container {
+    align-items: center;
+    z-index: 2000;
+    width: 100%;
+  
+    
+    background-color: #202020;
+    padding: 1rem;
+    box-sizing: border-box;
+    
+
+    border-bottom: solid 1px white; 
+    transition: 0.3s ease-in-out; 
+}
+
+.mid-nav {
+    display: block;
+}
+
+.fa-bars {
+    font-size: 2.5rem;
+    position: absolute;
+    z-index: 1;
+    top: 1rem;
+    left: 1.3rem;
+}
+
+main {
+    background-color: #303030;
+    height: 100%;
+    width: 100%;
+}
+
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.nav-button {
+    text-decoration: none;
+}
+
+.nav-button:hover {
+    
+    transform: scale(1.15);
+    transition: all 200ms;
+
+}
+
+.right-nav {
+    right: 0;
+}
+
+.dice {
+    height: 2.5rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dice img {
+    height: 100%;
+}
+
+/*#region Hamburger */
+
+
+
+  
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(37, 37, 37, .992);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    transform: translateY(-100%);
+    transition: transform 0.2s ease;
+}
+
+.showNav {
+    transform: translateY(0);
+}
+
+
+.hamburger-list {
+    margin-top: 3.5rem;
+    list-style-type: none;
+    padding-left: 0;
+    
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger-list a:link {
+
+    text-decoration: none;
+    color: white;
+    margin-bottom: 2 rem;
+    
+}
+
+.hamburger-list > li a {
+    color: white;
+ 
+
+}
+
+.hamburger-list li {
+    font-weight: bold;
+    padding: 1.7rem;
+    font-size: 1.35rem;
+}
+
+/*#endregion Hamburger */
+
+
+
+/*#endregion Header */
+
+/************ Main **********/
+.main-area {
+
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    color: white;
+
+}
+
+
+
+/*#region Hero */
+.page-image {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+    object-position: left;
+    object-fit: cover;
+}
+
+.main-area:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 20rem 20rem 25rem -5rem #202020, inset 0rem 0rem 0rem 0rem #202020; 
+
+    top: 0;
+    z-index: 100;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 200;
+
+}
+
+.hero-button {
+    background-color: rgba(37, 37, 37, .8);
+    color: white;
+    border-radius: 25px;
+    padding: .7rem .9rem .5rem .9rem;
+    border: solid 2px white;
+
+
+    font-family: type-writer;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.divider {
+    background-color: rgb(236, 236, 236);
+    height: 1px;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+
+
+
+/*#endregion hero */
+
+/*#region contact page */
+
+.contact-page {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-image {
+
+
+    bottom: 5rem;
+    border-radius: 50%;
+    border: solid 2px white;
+    height: 15rem;
+    width: 15rem;
+    object-fit: cover;
+
+    z-index: 200;
+
+}
+
+.contact-info {
+    font-size: 1.3rem;
+    
+}
+
+.page-image-contact {
+    position: fixed;
+    height: auto;
+    width: 100%;
+
+    object-position: left;
+    object-fit: cover;
+}
+
+.contact-information {
+    z-index: 200;
+}
+
+/*#endregion contact page */
+
+/*#region painting page */
+
+.painting-area {
+
+ 
+     height: 100%;
+     width: 100%;
+ 
+     background-position: left;
+     background-size: cover;
+     background-repeat: no-repeat;
+ 
+     color: white;
+
+     justify-content: center;
+ 
+}
+
+.painting-area:after {
+    content: "";
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 20rem 20rem 25rem -5rem #202020, inset 0rem 0rem 0rem 0rem #202020; 
+
+    top: 0;
+    z-index: 100;
+}
+
+
+
+.painting-page {
+    z-index: 1500;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.painting-textbox {
+    z-index: 1500;
+
+    margin-top: 5rem;
+    margin: 7rem 1rem 0 2rem;
+    justify-content: flex-start;
+    
+}
+
+.painting-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    padding: 0rem .5rem 0rem .5rem;
+    text-align: center;
+}
+
+.painting-displayer {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.paintings {
+    height: 80vh;
+    width: auto;
+
+    border: solid 2px white;
+    margin: 1rem 0 0 0;
+}
+
+
+/*#endregion painting page */
+
+
+/*#region web design */
+
+.play-game {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/*#endregion web design */
+
+
+/*#region Footer */
+
+footer {
+    background-color: #202020;
+    color: white;
+
+    height: 2rem;
+    width: 100%;
+    padding: .5rem 0rem .5rem 0rem;
+
+    bottom: 0;
+    z-index: 2000;
+    position: fixed;
+    border-top: solid 1px white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.footer-container {
+    background-color: #202020;
+    color: white;
+
+    height: 100%;
+    width: 100%;
+    padding: .5rem;
+    
+
+    text-align: center;
+
+}
+
+.footer-icons {
+    font-size: 1.7rem;
+}
+
+.footer-icons i {
+    margin: 0rem 1rem 0rem 1rem;
+}
+
+.social-links {
+    text-decoration: none;
+    color: white;
+}
+
+.social-links:hover {
+    transform: scale(1.15);
+    transition: all 200ms;
+}
+
+/*#endregion Footer */
