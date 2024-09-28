@@ -303,6 +303,17 @@ main {
     object-fit: cover;
 }
 
+.about-me-image {
+
+    height: 100%;
+    width: 100%;
+  /*  overflow: hidden; */
+
+    object-position: 50% 10%;
+    object-fit: cover;
+    position: fixed;
+}
+
 .contact-information {
     z-index: 200;
 }
@@ -310,6 +321,44 @@ main {
 /*#endregion contact page */
 
 /*#region painting page */
+
+.token-gallery {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+    z-index: 300;
+    place-items: center;
+    height: 100vh;
+    grid-auto-rows: min min-content;
+    overflow-y: auto;
+
+}
+
+.token-gallery-item {
+
+    display: flex;
+    /* overflow: hidden; */
+   /* height: 500px;
+    width: 300px; */
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.token-image {
+    width: 100%;
+    height: auto;
+    /* display: block; */
+}
+
+@media (min-width: 768px) {
+    .token-gallery {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
 
 .painting-area {
 
@@ -363,6 +412,16 @@ main {
     font-size: 1.3rem;
     padding: 0rem .5rem 0rem .5rem;
     text-align: center;
+}
+
+.aboutme-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 750;
+    padding: 0rem .5rem 0rem .5rem;
+    text-align: center;
+    text-shadow: 1px 1px 6px white;
+    color: black; 
 }
 
 .painting-displayer {
