@@ -307,13 +307,14 @@ main {
 
 .about-me-image {
 
+    position: fixed;
     height: 100%;
     width: 100%;
-  /*  overflow: hidden; */
+   overflow: hidden;
 
     object-position: 50% 10%;
     object-fit: cover;
-    position: fixed;
+
 }
 
 .contact-information {
@@ -361,6 +362,7 @@ main {
 
 .about-me-area {
     z-index: 1000;
+    justify-content: center;
 }
 
 .painting-area:after {
@@ -388,8 +390,13 @@ main {
 .aboutme-textbox {
     z-index: 1000;
     margin-top: 5rem;
-    margin: 7rem 1rem 0 2rem;
+    margin: 3rem 1rem 0 1rem;
     justify-content: flex-start;
+    background: rgba(0, 0, 0, 0.533);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0. 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
     
 }
 
@@ -403,11 +410,11 @@ main {
 .aboutme-text {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.4rem;
-    font-weight: 750;
+    font-weight: 00;
     padding: 0rem .5rem 0rem .5rem;
     text-align: center;
-    text-shadow: 1px 1px 6px white;
-    color: black; 
+    text-shadow: 1px 1px 6px black;
+    color: white; 
 }
 
 .painting-displayer {
