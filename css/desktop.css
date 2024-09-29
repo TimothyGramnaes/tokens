@@ -32,6 +32,8 @@ html { height: 100%; }
 }
 
 
+
+
 a:hover {
 
     transition: all 200ms;
@@ -326,8 +328,8 @@ main {
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10px;
-    padding: 10px;
+    gap: 5px;
+    padding: 5px;
     z-index: 300;
     place-items: center;
     height: 100vh;
@@ -354,26 +356,11 @@ main {
     /* display: block; */
 }
 
-@media (min-width: 768px) {
-    .token-gallery {
-      grid-template-columns: repeat(3, 1fr);
-    }
 
 
-.painting-area {
 
- 
-     height: 100%;
-     width: 100%;
- 
-     background-position: left;
-     background-size: cover;
-     background-repeat: no-repeat;
- 
-     color: white;
-
-     justify-content: center;
- 
+.about-me-area {
+    z-index: 1000;
 }
 
 .painting-area:after {
@@ -398,9 +385,8 @@ main {
 
 }
 
-.painting-textbox {
-    z-index: 1500;
-
+.aboutme-textbox {
+    z-index: 1000;
     margin-top: 5rem;
     margin: 7rem 1rem 0 2rem;
     justify-content: flex-start;
@@ -465,7 +451,7 @@ footer {
     padding: .5rem 0rem .5rem 0rem;
 
     bottom: 0;
-    z-index: 2000;
+    z-index: 3000;
     position: fixed;
     border-top: solid 1px white;
 
@@ -486,6 +472,7 @@ footer {
     
 
     text-align: center;
+    z-index: 2000;
 
 }
 
@@ -506,5 +493,8 @@ footer {
     transform: scale(1.15);
     transition: all 200ms;
 }
+
+
+
 
 /*#endregion Footer */
