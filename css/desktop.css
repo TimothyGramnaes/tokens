@@ -33,7 +33,6 @@ html { height: 100%; }
 
 
 
-
 a:hover {
 
     transition: all 200ms;
@@ -200,6 +199,7 @@ main {
 
     color: white;
 
+
 }
 
 
@@ -326,15 +326,17 @@ main {
 /*#region painting page */
 
 .token-gallery {
+    box-sizing: border-box;
+    margin: 1rem;
     position: relative;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 5px;
-    padding: 5px;
+    /* padding: 5px; */
     z-index: 300;
     place-items: center;
     height: 100vh;
-    grid-auto-rows: min min-content;
+    /* grid-auto-rows: min min-content; */
     overflow-y: auto;
 
 }
@@ -346,14 +348,42 @@ main {
    /* height: 500px;
     width: 300px; */
     flex-direction: column;
-    height: 100vh;
+    /* height: 100vh; */
     justify-content: center;
     align-items: center;
+    /* margin: 1rem; */
+
+    z-index: 1000;
+    /* margin-top: 5rem; */
+    margin: 3rem 1rem 1rem 1rem;
+    justify-content: flex-start;
+    background: rgba(0, 0, 0, 0.533);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0. 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    max-width: 25rem;
+}
+
+.token-image-container {
+
+    position: relative;
+    /* padding: .5rem; */
+    padding-top: .5rem;
+    overflow: hidden;
+    border-radius: 16px;
+
+    
 }
 
 .token-image {
     width: 100%;
     height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+    transform: scale(1.08);
+    /* margin: 0rem 1rem 1rem 1rem; */
+    overflow: hidden;
     /* display: block; */
 }
 
@@ -397,6 +427,7 @@ main {
     box-shadow: 0 4px 30px rgba(0, 0, 0. 0.1);
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
+    max-width: 25rem;
     
 }
 
