@@ -314,6 +314,11 @@ main {
 
 .contact-info {
     font-size: 1.3rem;
+    text-shadow: 
+    -1px -1px 5px black,   /* Top-left shadow */
+    1px -1px 5px black,   /* Top-right shadow */
+   -1px  1px 5px black,   /* Bottom-left shadow */
+    1px  1px 5px black;   /* Bottom-right shadow */
     
 }
 
