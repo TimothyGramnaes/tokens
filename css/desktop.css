@@ -436,7 +436,8 @@ main {
 
 .about-me-area {
     z-index: 1000;
-    justify-content: center;    
+    justify-content: center;
+    overflow-y: auto;    
 }
 
 .about-me-area:after {
@@ -456,8 +457,6 @@ main {
     display: flex;
     flex-direction: column;
     z-index: 1000;
-    margin-top: 5rem;
-    margin: 3rem 1rem 0 1rem;
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 0.533);
@@ -467,8 +466,7 @@ main {
     -webkit-backdrop-filter: blur(7px);
     max-width: 30rem;
     overflow-y: auto;
-    margin-top: 5rem;
-    margin-bottom: 12rem;
+    margin: 5rem 1rem 10rem 1rem;
     
 }
 
@@ -499,22 +497,21 @@ main {
     justify-content: center;
     align-items: center;
     gap: 5px;
-    /* padding: 5px; */
     z-index: 300;
     place-items: center;
     height: 100vh;
     width: 100%;
     /* grid-auto-rows: min min-content; */
     overflow-y: auto;
-    padding-bottom: 12rem;
+    /* padding-bottom: 12rem; */
 }
 
 .howtobuy-textbox {
     display: flex;
     flex-direction: column;
     z-index: 1000;
-    /* margin-top: 20rem; */
-    /* margin: 12rem 1rem 0rem 1rem; */
+    /* position: -ms-page; */
+
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 0.533);
@@ -524,7 +521,7 @@ main {
     -webkit-backdrop-filter: blur(7px);
     max-width: 30rem;
 
-    margin: 28rem 1rem 5rem 1rem;
+    margin: 22rem 1rem 10rem 1rem;
     /* margin-top: 28rem;
     margin-bottom: 5rem; */
    
