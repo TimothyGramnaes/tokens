@@ -432,45 +432,24 @@ main {
 }
 
 
-
+/* About me */
 
 .about-me-area {
     z-index: 1000;
-    justify-content: center;
+    justify-content: center;    
 }
 
 .about-me-area:after {
     content: "";
     display: block;
+    /* position fixed before */
     position: fixed;
     width: 100%;
     height: 100%;
     box-shadow: inset 10rem 10rem 10rem -5rem #202020, inset 0rem 0rem 0rem 0rem #202020; 
 
     top: 0;
-    z-index: 100;
-}
-
-.painting-area:after {
-    content: "";
-    display: block;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    box-shadow: inset 20rem 20rem 25rem -5rem #202020, inset 0rem 0rem 0rem 0rem #202020; 
-
-    top: 0;
-    z-index: 100;
-}
-
-
-
-.painting-page {
-    z-index: 1500;
-    box-sizing: border-box;
-    flex-direction: column;
-    align-items: center;
-
+    z-index: 400;
 }
 
 .aboutme-textbox {
@@ -510,11 +489,46 @@ main {
     color: white; 
 }
 
-.painting-displayer {
+/* HOW TO BUY AREA  */
+
+.howtobuy-area {
+    box-sizing: border-box;
+    /* margin: 1rem; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    /* padding: 5px; */
+    z-index: 300;
+    place-items: center;
+    height: 100vh;
+    width: 100%;
+    /* grid-auto-rows: min min-content; */
+    overflow-y: auto;
+    padding-bottom: 12rem;
+}
+
+.howtobuy-textbox {
     display: flex;
     flex-direction: column;
+    z-index: 1000;
+    /* margin-top: 20rem; */
+    /* margin: 12rem 1rem 0rem 1rem; */
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.533);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0. 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    max-width: 30rem;
 
-
+    margin: 28rem 1rem 5rem 1rem;
+    /* margin-top: 28rem;
+    margin-bottom: 5rem; */
+   
+    
 }
 
 .token-in-play-image {
