@@ -46,7 +46,12 @@
 
     .token-gallery {
         grid-template-columns: 1fr;
+    }
 
-}
+    .home-area {
+        grid-template-columns: 1fr;
+    }
+
+
 
 }

@@ -22,4 +22,8 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .home-area {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
