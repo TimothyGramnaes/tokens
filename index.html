@@ -5,17 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+
   <!--CSS-->
   <link rel="stylesheet" href="./css/desktop.css">
   <link rel="stylesheet" href="./css/tablet.css">
   <link rel="stylesheet" href="./css/mobile.css">
   <link rel="stylesheet" href="./css/home.css">
 
-  <!--JavaScript-->
-  <script src="./script.js"></script>
+
 
   <!--Font awesome-->
   <script src="https://kit.fontawesome.com/0c8b01a51f.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/0d24e41381.js" crossorigin="anonymous"></script>
 
   <title>Timothy Gramnaes</title>s
 </head>
@@ -75,7 +77,13 @@
             <button class="hero-button">Contact</button>
           </form>
           <div class="divider"></div>
-          <h1 class="hero-text-writings">What's up:</h1>
+            <div>         
+              <h1 class="hero-text-writings">
+                <img class="hero-arrow" src="./imgs/symbols/ArrowWhiteBlackEdge.svg" alt="TimothyGramnaes">            
+              What's up:
+              <img class="hero-arrow" src="./imgs/symbols/ArrowWhiteBlackEdge.svg" alt="TimothyGramnaes"></h1>
+
+            </div>
         </div>
 <!-- 
           <div class="news-area"> -->
@@ -86,10 +94,11 @@
                 <p class="news-date"><i>2024-10-20</i></p>
               </div>
                 <p class="news-title-p">29 Bears Alpha-strike</p>
-              </div>
-              <img class="news-img" src="./imgs/news/bears.jpg" alt="29bearsAlphaStrikeTokensByTim">
+              </div>             
+              <img class="news-img" id="img01" src="./imgs/news/bears.jpg" onclick="openModal(this)" alt="29bearsAlphaStrikeTokensByTim">
+
               <p class="news-text">Dear Anders, creator of the mighty Bearvitationals
-                                  created this awesome boardstate (not staged at all).
+                                  made this awesome boardstate (not staged at all).
               </p>
             </div>
 
@@ -140,7 +149,8 @@
     </div>
 
   </footer>
-
+    <!--JavaScript-->
+    <script src="./script.js"></script>
 </body>
 
 </html>

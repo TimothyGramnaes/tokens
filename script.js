@@ -59,21 +59,6 @@ function toggleHamburger() {
 
     navbar.classList.toggle("showNav");
     navbar.classList.toggle("closeNav");
-    console.log('kjasföa');
 
 }
 
-/**
- * 
- *
-
-function navEvents() {
-    const about = document.querySelector('#aboutMeButton');
-    about.addEventListener('click', toggleAboutMe);
-}
-
-function toggleAboutMe() {
-
-    const aboutMePage
-}
-*/

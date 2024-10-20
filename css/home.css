@@ -2,6 +2,8 @@
 
 
 .hero-text-writings {
+    display: flex;
+    align-items: center;
     text-shadow: 
     -1px -1px 5px black,   /* Top-left shadow */
     1px -1px 5px black,   /* Top-right shadow */
@@ -115,11 +117,6 @@
     padding-right: 1rem;
     text-align: center;
 
-    /* position: absoulte;
-    
-    right: 50%; */
-    /* transform: translateX(-25%); */
-    /* white-space: nowrap; */
 }
 
 .news-text {
@@ -132,19 +129,37 @@
 .news-img {
 
         display: flex;
-        /* bottom: 5rem; */
         border-radius: 8px;
         border: solid 2px white;
-        /* max-height: 27rem; */
         max-width: 90%;
         max-height: 100%;
         width: auto;
         height: auto;
         object-fit: contain;
-        /* margin-bottom: 2rem; */
-    
         z-index: 200;
+        cursor: pointer;
+        transition: .3s;
     
+}
+
+.news-img:hover {
+    transform: scale(1.25);
+    z-index: 900;
+    
+}
+
+.hero-arrow {
+    text-shadow: 
+    -1px -1px 5px black,   /* Top-left shadow */
+    1px -1px 5px black,   /* Top-right shadow */
+   -1px  1px 5px black,   /* Bottom-left shadow */
+    1px  1px 5px black;   /* Bottom-right shadow */
+
+    width: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+
 }
 
 /* .news-area {
