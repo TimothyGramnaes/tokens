@@ -227,6 +227,28 @@ main {
     z-index: 100;
 }
 
+.home-area {
+    box-sizing: border-box;
+    /* margin: 1rem; */
+    position: relative;
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr) !important; */
+    /* max-width: 100%; */
+
+    /* grid-template-columns: 1fr; */
+    grid-template-columns: repeat(3, 1fr) !important;
+
+    gap: 5px;
+    place-items: center;
+    height: 100vh;
+    /* grid-auto-rows: min min-content; */
+    overflow-y: auto;
+    padding-bottom: 12rem;
+    padding-top: 8rem;
+    z-index: 400;
+}
+
+
 
 /*#endregion hero */
 
