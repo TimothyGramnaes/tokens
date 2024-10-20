@@ -122,6 +122,13 @@
     /* white-space: nowrap; */
 }
 
+.news-text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: left;
+    font-size: small;
+}
+
 .news-img {
 
         display: flex;
