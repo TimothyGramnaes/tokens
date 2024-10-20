@@ -149,13 +149,8 @@
 }
 
 .hero-arrow {
-    text-shadow: 
-    -1px -1px 5px black,   /* Top-left shadow */
-    1px -1px 5px black,   /* Top-right shadow */
-   -1px  1px 5px black,   /* Bottom-left shadow */
-    1px  1px 5px black;   /* Bottom-right shadow */
 
-    width: 3rem;
+    width: 25px;
     padding-left: 1rem;
     padding-right: 1rem;
     
