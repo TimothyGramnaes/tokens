@@ -396,6 +396,19 @@ main {
     /* display: block; */
 }
 
+.token-head-image {
+    width: 90%;
+    height: auto;
+    border-radius: 6px;
+    border: 2px solid rgb(255, 255, 255);
+    object-fit: cover;
+
+    /* margin: 0rem 1rem 1rem 1rem; */
+    overflow: hidden;
+    /* display: block; */
+
+}
+
 
 /* About me */
 
