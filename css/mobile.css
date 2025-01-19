@@ -23,6 +23,10 @@
     display: block;
     }
 
+    .header {
+        height: 5rem;
+    }
+
     .paintings {
         height: auto;
         width: 90vw;
