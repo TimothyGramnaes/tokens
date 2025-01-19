@@ -400,7 +400,7 @@ main {
     width: 90%;
     height: auto;
     border-radius: 6px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid white;
     object-fit: cover;
 
     /* margin: 0rem 1rem 1rem 1rem; */
