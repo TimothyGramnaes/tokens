@@ -46,7 +46,12 @@
       <a href="./howtobuy.html" class="nav-item nav-button">How To Buy</a>
       <a href="./aboutme.html" class="nav-item nav-button">About Me</a>
       <a href="./contact.html" class="nav-item nav-button">Contact</a>
-      <a href="#" class="nav-item nav-button" id="cart-button">🛒 Cart (<span id="cart-count">0</span>)</a>
+    </div>
+    <div class="right-nav">
+      <a href="#" id="cart-button" class="cart-button">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-count" class="cart-count">0</span>
+      </a>
     </div>
     <!-- <div class="dice" id="die" onclick="rollDice()">
       <img src="./imgs/dice/6.png" alt="" srcset="">
@@ -85,7 +90,7 @@
             <p class="token-image-text">
                 Angel
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('angel', 'Angel', 2.00, 'imgs/tokensraw/AngelTimJpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('angel', 'Angel', 2.00, 'imgs/tokensraw/AngelTimJpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
 
@@ -96,7 +101,7 @@
             <p class="token-image-text">
                 Cat
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('cat', 'Cat', 2.00, 'imgs/tokensraw/CatJpg.jpeg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('cat', 'Cat', 2.00, 'imgs/tokensraw/CatJpg.jpeg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -106,7 +111,7 @@
             <p class="token-image-text">
                 Cat Warrior
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('cat-warrior', 'Cat Warrior', 2.00, 'imgs/tokensraw/CatWarriorJpg.jpeg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('cat-warrior', 'Cat Warrior', 2.00, 'imgs/tokensraw/CatWarriorJpg.jpeg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -116,7 +121,7 @@
             <p class="token-image-text">
                 Construct v.1
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('construct-v1', 'Construct v.1', 2.00, 'imgs/tokensraw/ConstructV1TimCjpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('construct-v1', 'Construct v.1', 2.00, 'imgs/tokensraw/ConstructV1TimCjpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -126,7 +131,7 @@
             <p class="token-image-text">
                 Construct v.2
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('construct-v2', 'Construct v.2', 2.00, 'imgs/tokensraw/Constructv2TimCjpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('construct-v2', 'Construct v.2', 2.00, 'imgs/tokensraw/Constructv2TimCjpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         
@@ -137,7 +142,7 @@
             <p class="token-image-text">
                 Clue
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('clue', 'Clue', 2.00, 'imgs/tokensraw/ClueTimCjpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('clue', 'Clue', 2.00, 'imgs/tokensraw/ClueTimCjpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -147,7 +152,7 @@
             <p class="token-image-text">
                 Copy
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('copy', 'Copy', 2.00, 'imgs/tokensraw/CopyTimJpg.jpeg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('copy', 'Copy', 2.00, 'imgs/tokensraw/CopyTimJpg.jpeg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -157,7 +162,7 @@
             <p class="token-image-text">
                 Day/Night (Day-side of the double-faced day/night-token)
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('day-night', 'Day/Night (Day-side of the double-faced day/night-token)', 2.00, 'imgs/tokensraw/DayTimJpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('day-night', 'Day/Night (Day-side of the double-faced day/night-token)', 2.00, 'imgs/tokensraw/DayTimJpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -167,7 +172,7 @@
             <p class="token-image-text">
                 Day/night (Night-side of the double-faced day/night-token)
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('day-night-nightside', 'Day/night (Night-side of the double-faced day/night-token)', 2.00, 'imgs/tokensraw/NightTimJpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('day-night-nightside', 'Day/night (Night-side of the double-faced day/night-token)', 2.00, 'imgs/tokensraw/NightTimJpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         
@@ -178,7 +183,7 @@
             <p class="token-image-text">
                 Devil
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('devil', 'Devil', 2.00, 'imgs/tokensraw/DevilTimJpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('devil', 'Devil', 2.00, 'imgs/tokensraw/DevilTimJpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -188,7 +193,7 @@
             <p class="token-image-text">
                 Drone
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('drone', 'Drone', 2.00, 'imgs/tokensraw/DroneTimJpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('drone', 'Drone', 2.00, 'imgs/tokensraw/DroneTimJpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         
@@ -199,7 +204,7 @@
             <p class="token-image-text">
                 Eldrazi Spawn
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('eldrazi-spawn', 'Eldrazi Spawn', 2.00, 'imgs/tokensraw/EldraziSpawnTimJpg.jpeg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('eldrazi-spawn', 'Eldrazi Spawn', 2.00, 'imgs/tokensraw/EldraziSpawnTimJpg.jpeg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -209,7 +214,7 @@
             <p class="token-image-text">
                 Elemental
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('elemental', 'Elemental', 2.00, 'imgs/tokensraw/ElementalTimJpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('elemental', 'Elemental', 2.00, 'imgs/tokensraw/ElementalTimJpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -219,7 +224,7 @@
             <p class="token-image-text">
                 Elephant
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('elephant', 'Elephant', 2.00, 'imgs/tokensraw/ElephantTimJpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('elephant', 'Elephant', 2.00, 'imgs/tokensraw/ElephantTimJpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -229,7 +234,7 @@
             <p class="token-image-text">
                 Energy
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('energy', 'Energy', 2.00, 'imgs/tokensraw/EnergyTimjpg.jpeg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('energy', 'Energy', 2.00, 'imgs/tokensraw/EnergyTimjpg.jpeg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -239,7 +244,7 @@
             <p class="token-image-text">
                 Faerie Rogue
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('faerie-rogue', 'Faerie Rogue', 2.00, 'imgs/tokensraw/FarieRogueTimJpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('faerie-rogue', 'Faerie Rogue', 2.00, 'imgs/tokensraw/FarieRogueTimJpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -249,7 +254,7 @@
             <p class="token-image-text">
                 Fish
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('fish', 'Fish', 2.00, 'imgs/tokensraw/FishTimJpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('fish', 'Fish', 2.00, 'imgs/tokensraw/FishTimJpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -259,7 +264,7 @@
             <p class="token-image-text">
                 Food
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('food', 'Food', 2.00, 'imgs/tokensraw/FoodTimjpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('food', 'Food', 2.00, 'imgs/tokensraw/FoodTimjpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -269,7 +274,7 @@
             <p class="token-image-text">
                 Germ (Phyrexian Germ)
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('germ', 'Germ (Phyrexian Germ)', 2.00, 'imgs/tokensraw/GermTimJpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('germ', 'Germ (Phyrexian Germ)', 2.00, 'imgs/tokensraw/GermTimJpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -279,7 +284,7 @@
             <p class="token-image-text">
                 Goat
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('goat', 'Goat', 2.00, 'imgs/tokensraw/GoatJpg.jpeg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('goat', 'Goat', 2.00, 'imgs/tokensraw/GoatJpg.jpeg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -289,7 +294,7 @@
             <p class="token-image-text">
                 Goblin v.1
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('goblin-v1', 'Goblin v.1', 2.00, 'imgs/tokensraw/GoblinTimCJpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('goblin-v1', 'Goblin v.1', 2.00, 'imgs/tokensraw/GoblinTimCJpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -299,7 +304,7 @@
             <p class="token-image-text">
                 Goblin v.2
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('goblin-v2', 'Goblin v.2', 2.00, 'imgs/tokensraw/GoblinV2TimJpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('goblin-v2', 'Goblin v.2', 2.00, 'imgs/tokensraw/GoblinV2TimJpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -309,7 +314,7 @@
             <p class="token-image-text">
                 Goblin Shaman
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('goblin-shaman', 'Goblin Shaman', 2.00, 'imgs/tokensraw/GoblinShamanTimCjpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('goblin-shaman', 'Goblin Shaman', 2.00, 'imgs/tokensraw/GoblinShamanTimCjpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -319,7 +324,7 @@
             <p class="token-image-text">
                 Human Cleric
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('human-cleric', 'Human Cleric', 2.00, 'imgs/tokensraw/HumanClericTimJpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('human-cleric', 'Human Cleric', 2.00, 'imgs/tokensraw/HumanClericTimJpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -329,7 +334,7 @@
             <p class="token-image-text">
                 Human Knight v.1
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('human-knight-v1', 'Human Knight v.1', 2.00, 'imgs/tokensraw/HumanKnightv1TimJpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('human-knight-v1', 'Human Knight v.1', 2.00, 'imgs/tokensraw/HumanKnightv1TimJpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -339,7 +344,7 @@
             <p class="token-image-text">
                 Human Knight v.2
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('human-knight-v2', 'Human Knight v.2', 2.00, 'imgs/tokensraw/HumanKnightv2TimJpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('human-knight-v2', 'Human Knight v.2', 2.00, 'imgs/tokensraw/HumanKnightv2TimJpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -349,7 +354,7 @@
             <p class="token-image-text">
                 Illusion
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('illusion', 'Illusion', 2.00, 'imgs/tokensraw/IllusionTimJpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('illusion', 'Illusion', 2.00, 'imgs/tokensraw/IllusionTimJpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -359,7 +364,7 @@
             <p class="token-image-text">
                 Insect
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('insect', 'Insect', 2.00, 'imgs/tokensraw/InsectTimJpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('insect', 'Insect', 2.00, 'imgs/tokensraw/InsectTimJpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -369,7 +374,7 @@
             <p class="token-image-text">
                 Manifest
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('manifest', 'Manifest', 2.00, 'imgs/tokensraw/ManifestTimJpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('manifest', 'Manifest', 2.00, 'imgs/tokensraw/ManifestTimJpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
                 <div class="token-gallery-item">
@@ -379,7 +384,7 @@
             <p class="token-image-text">
                 Map
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('map', 'Map', 2.00, 'imgs/tokensraw/MapTim25jpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('map', 'Map', 2.00, 'imgs/tokensraw/MapTim25jpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
 
@@ -390,7 +395,7 @@
             <p class="token-image-text">
                 Marit Lage
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('marit-lage', 'Marit Lage', 2.00, 'imgs/tokensraw/MaritLageTimCjpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('marit-lage', 'Marit Lage', 2.00, 'imgs/tokensraw/MaritLageTimCjpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -400,7 +405,7 @@
             <p class="token-image-text">
                 Monarch v.1
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('monarch-v1', 'Monarch v.1', 2.00, 'imgs/tokensraw/GoblinMonarchTimJpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('monarch-v1', 'Monarch v.1', 2.00, 'imgs/tokensraw/GoblinMonarchTimJpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -410,7 +415,7 @@
             <p class="token-image-text">
                 Monarch v.2
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('monarch-v2', 'Monarch v.2', 2.00, 'imgs/tokensraw/BearMonarchJpg.jpeg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('monarch-v2', 'Monarch v.2', 2.00, 'imgs/tokensraw/BearMonarchJpg.jpeg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -420,7 +425,7 @@
             <p class="token-image-text">
                 Monk
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('monk', 'Monk', 2.00, 'imgs/tokensraw/MonkTimJpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('monk', 'Monk', 2.00, 'imgs/tokensraw/MonkTimJpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -430,7 +435,7 @@
             <p class="token-image-text">
                 Orc Army
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('orc-army', 'Orc Army', 2.00, 'imgs/tokensraw/OrcArmyTimCjpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('orc-army', 'Orc Army', 2.00, 'imgs/tokensraw/OrcArmyTimCjpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -440,7 +445,7 @@
             <p class="token-image-text">
                 Pilot
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('pilot', 'Pilot', 2.00, 'imgs/tokensraw/PilotTimJpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('pilot', 'Pilot', 2.00, 'imgs/tokensraw/PilotTimJpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -450,7 +455,7 @@
             <p class="token-image-text">
                 Rat
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('rat', 'Rat', 2.00, 'imgs/tokensraw/RatTimJpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('rat', 'Rat', 2.00, 'imgs/tokensraw/RatTimJpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-textbox">
@@ -466,7 +471,7 @@
                 <p class="token-image-text">
                     Rock
                 </p>
-                <button class="add-to-cart-btn" onclick="addToCart('rock', 'Rock', 2.00, 'imgs/tokensraw/RockTimJpg.jpg')">Add to Cart - $2.00</button>
+                <button class="add-to-cart-btn" onclick="addToCart('rock', 'Rock', 2.00, 'imgs/tokensraw/RockTimJpg.jpg')">Add to Cart - €2.00</button>
             </div>
 
             <div class="token-gallery-item">
@@ -476,7 +481,7 @@
                 <p class="token-image-text">
                     Paper
                 </p>
-                <button class="add-to-cart-btn" onclick="addToCart('paper', 'Paper', 2.00, 'imgs/tokensraw/PaperTimJpg.jpg')">Add to Cart - $2.00</button>
+                <button class="add-to-cart-btn" onclick="addToCart('paper', 'Paper', 2.00, 'imgs/tokensraw/PaperTimJpg.jpg')">Add to Cart - €2.00</button>
             </div>
 
             <div class="token-gallery-item">
@@ -486,7 +491,7 @@
                 <p class="token-image-text">
                     Scissors
                 </p>
-                <button class="add-to-cart-btn" onclick="addToCart('scissors', 'Scissors', 2.00, 'imgs/tokensraw/ScissorsTimJpg.jpg')">Add to Cart - $2.00</button>
+                <button class="add-to-cart-btn" onclick="addToCart('scissors', 'Scissors', 2.00, 'imgs/tokensraw/ScissorsTimJpg.jpg')">Add to Cart - €2.00</button>
             </div>
 
         <div class="token-gallery-item">
@@ -496,7 +501,7 @@
             <p class="token-image-text">
                 Rhino
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('rhino', 'Rhino', 2.00, 'imgs/tokensraw/RhinoTimCjpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('rhino', 'Rhino', 2.00, 'imgs/tokensraw/RhinoTimCjpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -506,7 +511,7 @@
             <p class="token-image-text">
                 Saproling
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('saproling', 'Saproling', 2.00, 'imgs/tokensraw/SaprolingTimJpg.jpeg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('saproling', 'Saproling', 2.00, 'imgs/tokensraw/SaprolingTimJpg.jpeg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -516,7 +521,7 @@
             <p class="token-image-text">
                 Servo
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('servo', 'Servo', 2.00, 'imgs/tokensraw/ServoTimCjpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('servo', 'Servo', 2.00, 'imgs/tokensraw/ServoTimCjpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -526,7 +531,7 @@
             <p class="token-image-text">
                 Skeleton 4/1 Menace
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('skeleton-41', 'Skeleton 4/1 Menace', 2.00, 'imgs/tokensraw/Skeleton41TimJpg.jpeg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('skeleton-41', 'Skeleton 4/1 Menace', 2.00, 'imgs/tokensraw/Skeleton41TimJpg.jpeg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -536,7 +541,7 @@
             <p class="token-image-text">
                 Skeleton 2/1
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('skeleton-21', 'Skeleton 2/1', 2.00, 'imgs/tokensraw/Skeleton21Jpg.jpeg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('skeleton-21', 'Skeleton 2/1', 2.00, 'imgs/tokensraw/Skeleton21Jpg.jpeg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -546,7 +551,7 @@
             <p class="token-image-text">
                 Slug
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('slug', 'Slug', 2.00, 'imgs/tokensraw/SlugTimJpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('slug', 'Slug', 2.00, 'imgs/tokensraw/SlugTimJpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -556,7 +561,7 @@
             <p class="token-image-text">
                 Snake
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('snake', 'Snake', 2.00, 'imgs/tokensraw/SnakeTimJpg.jpeg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('snake', 'Snake', 2.00, 'imgs/tokensraw/SnakeTimJpg.jpeg')">Add to Cart - €2.00</button>
         </div>
 
                 <div class="token-gallery-item">
@@ -566,7 +571,7 @@
             <p class="token-image-text">
                 Soldier
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('soldier', 'Soldier', 2.00, 'imgs/tokensraw/SoldierTim25jpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('soldier', 'Soldier', 2.00, 'imgs/tokensraw/SoldierTim25jpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -576,7 +581,7 @@
             <p class="token-image-text">
                 Spirit
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('spirit', 'Spirit', 2.00, 'imgs/tokensraw/SpiritJpg.jpeg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('spirit', 'Spirit', 2.00, 'imgs/tokensraw/SpiritJpg.jpeg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -586,7 +591,7 @@
             <p class="token-image-text">
               Squirrel
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('squirrel', 'Squirrel', 2.00, 'imgs/tokensraw/SquirrelTimJpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('squirrel', 'Squirrel', 2.00, 'imgs/tokensraw/SquirrelTimJpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -596,7 +601,7 @@
             <p class="token-image-text">
                 Thopter
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('thopter', 'Thopter', 2.00, 'imgs/tokensraw/ThopterTimJpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('thopter', 'Thopter', 2.00, 'imgs/tokensraw/ThopterTimJpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -606,7 +611,7 @@
             <p class="token-image-text">
                 Treasure
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('treasure', 'Treasure', 2.00, 'imgs/tokensraw/TreasureTimCjpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('treasure', 'Treasure', 2.00, 'imgs/tokensraw/TreasureTimCjpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -616,7 +621,7 @@
             <p class="token-image-text">
                 Vampire
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('vampire', 'Vampire', 2.00, 'imgs/tokensraw/VampireTimCjpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('vampire', 'Vampire', 2.00, 'imgs/tokensraw/VampireTimCjpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
                 <div class="token-gallery-item">
@@ -626,7 +631,7 @@
             <p class="token-image-text">
                 Warrior
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('warrior', 'Warrior', 2.00, 'imgs/tokensraw/WarriorTim25jpg.png')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('warrior', 'Warrior', 2.00, 'imgs/tokensraw/WarriorTim25jpg.png')">Add to Cart - €2.00</button>
         </div>
 
 
@@ -637,7 +642,7 @@
             <p class="token-image-text">
                 Zombie v.1
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('zombie-v1', 'Zombie v.1', 2.00, 'imgs/tokensraw/ZombieTimJpg.jpeg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('zombie-v1', 'Zombie v.1', 2.00, 'imgs/tokensraw/ZombieTimJpg.jpeg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -647,7 +652,7 @@
             <p class="token-image-text">
                 Zombie v.2
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('zombie-v2', 'Zombie v.2', 2.00, 'imgs/tokensraw/ZombieBearTimJpg3.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('zombie-v2', 'Zombie v.2', 2.00, 'imgs/tokensraw/ZombieBearTimJpg3.jpg')">Add to Cart - €2.00</button>
         </div>
 
         
@@ -659,7 +664,7 @@
             <p class="token-image-text">
                 Bat
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('bat', 'Bat', 2.00, 'imgs/tokensraw/BatTimJpg.jpeg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('bat', 'Bat', 2.00, 'imgs/tokensraw/BatTimJpg.jpeg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -669,7 +674,7 @@
             <p class="token-image-text">
                 Boo
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('boo', 'Boo', 2.00, 'imgs/tokensraw/BooTim2Jpg.jpg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('boo', 'Boo', 2.00, 'imgs/tokensraw/BooTim2Jpg.jpg')">Add to Cart - €2.00</button>
         </div>
 
         <div class="token-gallery-item">
@@ -679,7 +684,7 @@
             <p class="token-image-text">
                 Blood
             </p>
-            <button class="add-to-cart-btn" onclick="addToCart('blood', 'Blood', 2.00, 'imgs/tokensraw/BloodJpg.jpeg')">Add to Cart - $2.00</button>
+            <button class="add-to-cart-btn" onclick="addToCart('blood', 'Blood', 2.00, 'imgs/tokensraw/BloodJpg.jpeg')">Add to Cart - €2.00</button>
         </div>
 
 

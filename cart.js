@@ -136,6 +136,42 @@ class ShoppingCart {
   addCartStyles() {
     const style = document.createElement('style');
     style.textContent = `
+      /* Cart button in navigation */
+      .cart-button {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 16px;
+        background: #4CAF50;
+        color: white !important;
+        text-decoration: none !important;
+        border-radius: 5px;
+        font-size: 18px;
+        transition: background 0.3s ease;
+        cursor: pointer;
+      }
+
+      .cart-button:hover {
+        background: #45a049;
+      }
+
+      .cart-count {
+        background: #f44336;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 2px 8px;
+        border-radius: 10px;
+        min-width: 20px;
+        text-align: center;
+      }
+
+      .right-nav {
+        display: flex;
+        align-items: center;
+      }
+
       .cart-overlay {
         position: fixed;
         top: 0;
@@ -473,7 +509,7 @@ class ShoppingCart {
             <img src="${item.image}" alt="${item.name}" class="cart-item-image">
             <div class="cart-item-details">
               <div class="cart-item-name">${item.name}</div>
-              <div class="cart-item-price">$${item.price.toFixed(2)} each</div>
+              <div class="cart-item-price">€${item.price.toFixed(2)} each</div>
               ${stockWarning}
             </div>
             <div class="cart-item-controls">
@@ -495,7 +531,7 @@ class ShoppingCart {
       checkoutButton.disabled = hasOutOfStock;
     }
 
-    cartTotalElement.textContent = `$${this.getTotal().toFixed(2)}`;
+    cartTotalElement.textContent = `€${this.getTotal().toFixed(2)}`;
   }
 
   // Attach event listeners
