@@ -1,0 +1,27 @@
+# Shopping cart development notes
+SHOPPING_CART_NOTES.md
+
+# Stripe configuration (contains API keys - NEVER commit!)
+stripe-config.php
+
+# Inventory data (contains current stock levels - manage separately)
+inventory.json
+
+# IDE/Editor specific files
+.vscode/
+.idea/
+
+# PHP temporary files
+*.log
+error_log
+
+# OS specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~

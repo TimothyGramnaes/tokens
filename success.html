@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Success - Timothy Gramnaes</title>
+  <link rel="stylesheet" href="./css/desktop.css">
+  <link rel="stylesheet" href="./css/tablet.css">
+  <link rel="stylesheet" href="./css/mobile.css">
+  <style>
+    .success-container {
+      max-width: 600px;
+      margin: 100px auto;
+      padding: 40px;
+      text-align: center;
+      background: #f8f9fa;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .success-icon {
+      font-size: 64px;
+      color: #4CAF50;
+      margin-bottom: 20px;
+    }
+    .success-title {
+      font-size: 32px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .success-message {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 30px;
+    }
+    .success-button {
+      display: inline-block;
+      background: #4CAF50;
+      color: white;
+      padding: 12px 30px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      margin: 10px;
+    }
+    .success-button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="success-container">
+    <div class="success-icon">✓</div>
+    <h1 class="success-title">Order Successful!</h1>
+    <p class="success-message">
+      Thank you for your purchase! Your tokens will be shipped soon.<br>
+      You will receive a confirmation email with your order details.
+    </p>
+    <a href="./tokens.html" class="success-button">Continue Shopping</a>
+    <a href="./index.html" class="success-button">Back to Home</a>
+  </div>
+
+  <script>
+    // Clear the cart after successful purchase
+    localStorage.removeItem('tokenCart');
+  </script>
+</body>
+</html>
