@@ -5,10 +5,10 @@
     display: flex;
     align-items: center;
     text-shadow: 
-    -1px -1px 5px black,   /* Top-left shadow */
-    1px -1px 5px black,   /* Top-right shadow */
-   -1px  1px 5px black,   /* Bottom-left shadow */
-    1px  1px 5px black;   /* Bottom-right shadow */
+    -4px -4px 10px black,   /* Top-left shadow */
+    4px -4px 10px black,   /* Top-right shadow */
+   -4px  4px 10px black,   /* Bottom-left shadow */
+    4px  4px 10px black;   /* Bottom-right shadow */
     color: white; 
 }
 
