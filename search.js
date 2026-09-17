@@ -31,13 +31,15 @@
     input.addEventListener('input', () => filterAndScroll(input.value));
     form.addEventListener('submit', e => e.preventDefault());
 
-    // Apply URL query on arrival from another page
-    const params = new URLSearchParams(window.location.search);
-    const q = params.get('search') || '';
-    if (q) {
-      input.value = q;
-      filterAndScroll(q);
-    }
+    // Apply URL query on arrival from another page — wait for full load so scroll lands correctly
+    window.addEventListener('load', () => {
+      const params = new URLSearchParams(window.location.search);
+      const q = params.get('search') || '';
+      if (q) {
+        input.value = q;
+        filterAndScroll(q);
+      }
+    });
 
   } else {
     function redirect() {
